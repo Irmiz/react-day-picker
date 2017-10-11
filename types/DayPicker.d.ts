@@ -5,7 +5,7 @@ import { LocaleUtils, ModifiersUtils, DateUtils } from "./utils";
 import { ClassNames, DayModifiers, Modifier, Modifiers } from "./common";
 import { CaptionElementProps, NavbarElementProps, WeekdayElementProps, DayPickerProps } from "./props";
 
-export class DayPicker<T extends DayPickerProps> extends React.Component<DayPickerProps, any> {
+export class DayPicker<T extends DayPickerProps> extends React.Component<T, any> {
   static VERSION: string;
   static LocaleUtils: LocaleUtils;
   static DateUtils: DateUtils;
